@@ -1,0 +1,16 @@
+if SHIELD_MOKULUA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "mokulua"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_MOKULUA_LEFT
+
+if SHIELD_MOKULUA_LEFT || SHIELD_MOKULUA_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_MOKULUA_LEFT || SHIELD_MOKULUA_RIGHT
