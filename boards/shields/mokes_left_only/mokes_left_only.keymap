@@ -27,6 +27,8 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C   &kp V       &kp B       &kp C_MUTE
                 &kp LCTRL   &kp LGUI    &kp LALT    &trans  &kp SPACE   &kp SPACE   &studio_unlock 
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
         };
     };
 };
